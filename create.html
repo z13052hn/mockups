@@ -1,0 +1,124 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Create Quiz</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+		<style>
+
+			#categories{
+				padding-left: 80px;  
+			}
+			#question-and-answer{
+                padding-top: 20px;
+                padding-left: 80px;
+                border-left: 1px solid;
+			}
+            #notification{
+                padding-top: 20px;
+                font-size: 40px;
+            }
+		</style>
+
+	</head>
+	<body>
+		<div class="row top-panel bg-primary">
+            <div class="col-md-2">
+    			<img src="imgs\user.png" height="100" width="100" />
+            	User's Name
+            </div>
+            <div class="col-md-8">
+            </div>
+            <div class="col-md-1" id="notification">
+                <span class="glyphicon glyphicon-globe"></span>
+            </div>
+		</div>
+		 <div class="row mainContent">
+            <form class="form-horizontal" action="#">
+                <div class="col-md-3" id="categories">
+                    <div class="form-group">
+                         <h3>Categories</h3>
+                        <label>
+                            <input type="radio" name="optionsRadios" id="entertaiment" value="option1" checked=""> Entertainment
+                        </label><br/>
+                   
+                   
+                        <label>
+                            <input type="radio" name="optionsRadios" id="sport" value="option2"> Sport
+                        </label><br/>
+                   
+                        <label>
+                            <input type="radio" name="optionsRadios" id="tv" value="option3"> TV & Movies
+                        </label><br/>
+                  
+                        <label>
+                            <input type="radio" name="optionsRadios" id="music" value="option4"> Music
+                        </label><br/>
+                 
+                        <label>
+                            <input type="radio" name="optionsRadios" id="food" value="option5" > Food & Drink
+                        </label><br/>
+                    
+                        <label>
+                            <input type="radio" name="optionsRadios" id="geography" value="option6" > Geography
+                        </label><br/>
+                   
+                        <label>
+                            <input type="radio" name="optionsRadios" id="generalKnowledge" value="option7" > General Knowledge
+                        </label><br/>
+                 
+                        <label>
+                            <input type="radio" name="optionsRadios" id="history" value="option8" > History
+                        </label><br/>
+                
+                        <label>
+                            <input type="radio" name="optionsRadios" id="science" value="option9" > Science and Nature
+                        </label>
+                    
+
+                    </div>
+                </div>
+                    
+                <div class="col-md-9" id="question-and-answer">
+                    <div class="form-group">
+                        Type Question:
+                        <select name="typeQuestion">
+                            <option>Option1</option>
+                            <option>Option2</option>
+                        </select>
+                    </div>
+                            
+                    <div class="row form-group Question">
+                        <h4>Question</h4>
+                        <textarea placeholder="Your quiz..."  class="col-md-7"></textarea>
+                    
+                    </div>
+                    <div class="form-group answer">
+                        <h4>Answer</h4>
+                        <div class="form-group">
+                            
+                            <label style="padding-right: 80px">
+                                <input type="radio" name="optionsRadios" id="answer1" value="option1" > <textarea placeholder="answer 1..."></textarea>
+                            </label> 
+                            <label>                         
+                                <input type="radio" name="optionsRadios" id="answer2" value="option2"> <textarea placeholder="answer 2..."></textarea>
+                            </label><br/>
+                        
+                        
+                            <label style="padding-right: 80px">
+                                <input type="radio" name="optionsRadios" id="answer3" value="option3"> <textarea placeholder="answer 3..."></textarea>
+                            </label>
+                            <label>
+                                <input type="radio" name="optionsRadios" id="answer4" value="option3"> <textarea placeholder="answer 4..."></textarea>
+                            </label>
+                            
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+            </form>
+        </div>
+	</body>
+</html>
